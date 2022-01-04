@@ -1,0 +1,16 @@
+JAVA 설치
+
+A<내pc program files 에 JAVA생성 됐는지 확인 - JDK폴더 들어가기>
+
+내pc - 마우스 우클릭 속성 - 고급 -고급시스템 설정 - 환경 변수 - '시스템 변수'에 새로만들기 클릭
+-변수 이름 : JAVA_HOME, 변수 값 : 위에 A 주소 복붙 - 확인 후 변수이름에 새로만들기 %JAVA-HOME%\bin\ - 확인x3
+-cmb들어가서 javac - java version 까지 확인
+
+git ssh 암호 설정
+
+git profile - SSH and GPG keys - new sshkey - title 설정
+git bash 띄우기 - ssh-keygen -t rsa -C "이메일 입력" - 암호 설정 암호확인
+내pc - c드라이브 - 사용자 - 사용자 이름(학원폴더는 21) - .ssh memo파일 복사 - title밑에 입력
+위에 git bash에 
+    => git config --global user.name "stooooopu"
+    => git config --global user.email "jyg5193@naver.com" 입력
