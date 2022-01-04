@@ -14,3 +14,6 @@ git bash 띄우기 - ssh-keygen -t rsa -C "이메일 입력" - 암호 설정 암
 위에 git bash에 
     => git config --global user.name "stooooopu"
     => git config --global user.email "jyg5193@naver.com" 입력
+
+
+vsc 내일 입력 할 것입니다요
