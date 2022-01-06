@@ -1,0 +1,47 @@
+ip
+공인 ip
+사설 ip
+
+로컬 local : 본인이 쓰고있는 pc / 127.0.0.1 디폴트 값
+lcoalhost는 잊으면 안돼!
+
+데이터베이스
+-데이터베이스 종류는 여러가지이지만 문법은 동일
+-오라클(국가기관, 요즘엔 한국에서 만든 Tmax로 대체되는 추세) , SQL, Mariadb(스타트업, 중견기업)
+-데이터베이스를 잘 배우면 웹, 앱, IoT, 데이터분석, AI 공통점 *데이터가 있어야함
+-모든 어플리케이션의 시작점
+
+port : 서버에 접속 할 수있는 문
+        192.168.0.32:80 이때 80이 port
+ip가 주소라면 port는 동호수이다, 서비스를 제공하기 위해선 port번호가 있어야한다
+
+><window tip : 시작줄에 서비스라고 치면 현재 운영되고 있는 서비스가 다 뜸
+
+
+***DDL(data Definition Languge) : 데이터 정의 언어
+		공통점 : table을 관리하는 명령어
+CREATE TABLE <table_name> : table 생성
+DROP TABLE <table_name> : table 삭제
+ALTER TABLE <table_name> : table 수정 (테이블 이름 변경할 때 씀)
+
+*****DML(Data Manipulation Languge) : 데이터 조작 언어
+		공통점 : data룰 관리하는 명령어
+SELECT : 데이터 조회
+DELETE : 데이터 삭제
+UPDATE : 데이터 수정
+INSERT : 데이터 삽입 or 생성
+
+ex)
+select
+ <컬럼 이름>,
+ <컬럼 이름>,
+ ...n (한번에 많이 조회 가능)
+from
+ <테이블 이름>
+where (필터링 기능)
+ <컬럼명> = <조건, 데이터/이때 문자는 ""나 ''를 쓴다>
+
+DCL(Data control Languge) : 데이터 제어 언어 (보통 팀장급들이나 큰 규모의 회사에 가게되면 씀 데이터베이스를 관리하는 직업)
+	공통점 : 데이터베이스 관리
+GRANT : 특정 사용자에게 권한 부여
+REVOKE : 특정 사용자 권한 회수
