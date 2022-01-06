@@ -1,0 +1,71 @@
+1. 데이터를 저장하는 프로그램을 배우는 것!
+  => 데이터베이스
+
+2. SQL이라는 문법을 통해서 컴퓨터에 쌓인 문서를 가져와야함
+
+-emp 테이블 컬럼 뜻
+MGR 사수번호
+HIREDATE 고용날짜
+SAL 월급
+COMM 보너스
+DEPTNO 부서번호
+
+*****관계연산자
+=, <, >, <=, >=, !=(같지 않을 때, 다르다)
+
+-만약 수량만 알고싶을 경우
+	count(*)
+-컬럼명에 다른 말을 넣고 싶을 때
+	count(*) as '별칭을 넣기'
+
+****논리 연산자
+and(두개가 참일때), or(둘 중 하나라도 참일때)
+
+정렬해서 보고싶을 때
+order by 컬럼이름 desc(내림차순)/asc(오름차순)
+한 번 입력하면 지워도 기본값으로 저장되어있음
+맨 마지막에 실행되는 문법
+**데이터가 많지 않으면 써도 되지만 많으면 최대한 쓰지 말아야 함
+
+읽는 순서는
+from - where - select - order by 
+
+null = 해당 데이터에 값을 안넣은 상태 = 데이터 없음
+
+is null 
+
+이름 검색할땐 ''거의 안씀
+like 를 씀
+
+ex) ename에 a들어가는 사람
+where ename like 'a%'
+
+ex) ename에 LL이 들어가는 사람
+where ename like '%L%L%'
+
+삽입하기
+insert into ABC
+(1,2,3,4,5)
+values
+(a,b,c,d,e)
+
+이때 d값이 없을때
+insert into ABC
+(1,2,3,5)
+values
+(a,b,c,e)
+이렇게 d값자리인 4를 생략한다
+그럼 ABC테이블에 null로 뜸
+*해당 컬럼과 해당 데이터의 매치가 중요!
+
+delete는 관계형이라 제약조건이 많음
+
+**update <table이름>
+set <바꿀 열 이름> = <바꿀 이름>  이때 where절을 안쓰면 전부다 바뀌므로 주의!
+where <pk이름> = <바꿀 pk> pk 는 고유번호이기 때문에 겹칠일 없음
+
+group by : select 에는 group by가 되지 않는 것은 올 수 없음 = 그루핑 할 수 있는 것 만 올 수있음  like 이름 처럼 모두 다른경우
+
+having : group by 후 통계함수 조건 걸 때
+
+***** from - where - group by - having - select - order by *****
