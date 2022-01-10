@@ -1,0 +1,133 @@
+
+#limit : 출력되는 결과 행의 수를 제한 (사용률 100%)
+
+select 
+from
+where 
+group by 
+having 
+order by 
+limit  0,10
+(맨 밑에 옴, 0부터 시작)
+
+#join : 교집합
+
+select
+	*
+from emp as e
+inner join dept as d
+on e.deptno = d.deptno
+inner join dw as dw
+on
+...
+
+1.inner join(내부조인 or 조인) : 두 개 이상의 테이블을 조회할 때, 두 테이블에 모두 지정한 데이터 조회
+
+
+
+2.outer join(외부조인) :  두 테이블을 조회할 때, 1개의 테이블에만 데이터가 있어도 조회
+	언제 사용 : 회원가입 하고 한 번도 구매내역 없는 회원 조회할 때
+	내가 원하는 정보가 어느 테이블에 있는지 확인할 때
+
+-1.left outer join : 왼쪽 테이블의 모든 값이 출력되는 조인
+
+-2.right outer join : 오른쪽 테이블의 모든 값이 출력되는 조인
+
+-3..full outer join : 왼쪽 또는 오른쪽 테이블의 모든 값이 출력되는 조인
+
+select <컬럼목록>
+from <첫 번째 테이블 이름>
+(left or right) outer join <두 번째 테이블 이름>
+on <join 조건>
+where
+
+
+
+3.selfe join(자체 조인) : 자신이 자신과 조인, 1개의 테이블에서 사용
+	별도의 문법이 있는 것은 아님
+	inner join과 문법이 동일 = 동일 테이블을 inner join 으로 두 번 조인
+
+-1)사원들의 사수 이름과 번호 조회
+select 
+	sawon.empno as '사원번호',
+	sawon.ENAME as '사원이름',
+	boss.EMPNO as '사수번호',
+	boss.ENAME as '사수이름'
+from emp as sawon
+inner join emp as boss
+on sawon.MGR = boss.EMPNO  
+
+-2)사수들의 사원 이름과 번호 조회
+select 
+	boss.EMPNO as '사수번호',
+	boss.ENAME as '사수이름',
+	sawon.empno as '사원번호',
+	sawon.ENAME as '사원이름'
+from emp as sawon
+inner join emp as boss
+on boss.EMPNO = sawon.MGR   
+
+
+
+4. 다중 조인 : 별칭 잘 나눠야함
+select <컬럼목록>
+from <테이블 별칭 A>
+(inner or left or right) join <테이블 별칭 B>
+on <join 조건>
+(inner or left or right) join <테이블 별칭 C>
+on <join 조건>
+[where, gruop by, having, order by ...]
+
+select
+	*
+from emp as e
+inner join dept as d 
+on e.DEPTNO = d.DEPTNO 
+inner join emp as boss 
+on e.MGR = boss.EMPNO 
+
+
+#sub query : 하나의 쿼리 문장 내에 포함 된 또 하나의 쿼리
+	규칙       1. 반드시 괄호()로 묶음
+		select 
+			(select...)
+		2. 서브쿼리가 먼저 **실행**된 후 외부쿼리와 비교/연산
+		3. 서브쿼리가 가능한 곳
+		   3-1. select 절 (스칼라 서브쿼리)
+		   **3-2. from 절 (인라인 뷰)
+		   3-3. where 절 (중첩 서브쿼리)
+		   3-4. having
+		   3-5. order by
+		   3-6. insert values
+		   3-7. update set (MYSQL 실행 안됨/오라클 가능)
+		
+ex)
+--10번부서에서 회사 평균 급여보다 많이 받는 사람 조회
+
+select 
+	* 
+from emp 
+where DEPTNO = 10
+and 
+SAL >= (select avg(SAL) from emp)
+
+--사원번호가 7876인 사원과 job이 같은 사람 모두 조회
+
+select
+	*
+from emp
+where
+JOB = (
+select JOB from emp where EMPNO = 7876
+)
+
+
+
+		4. 서브쿼리 종류
+		   4-1. 단일 서브쿼리
+		   4-2. 다중행 서브쿼리(쓰는 곳이 거의 없기 때문에 간단하게)
+delete
+
+모델링 : 테이블을 create하는 작업
+	PK, FK 작업을 여기서 함
+테이블의 데이터 타입 -> JAVA시간에
