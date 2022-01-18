@@ -1,0 +1,92 @@
+JAVA	(객체지향언어)
+
+1. if/else, for, while, 배열 (공통)
+2. 메소드, 클래스 (객체지향언어 특징)
+ =>여기까지 제대로 배우면 다른 언어도 python, JavaScript, C++도 쓸 수 있음
+3. 제네릭 컬렉션(자바 특징)
+
+'String =='은 비교하고자 하는 두 개 대상의 주소값을 비교함 (Call by Reference)
+'equals'는 비교하고자 하는 두 개 대상의 값 자체를 비교함 (Call by Value)
+
+int num1 = 10;
+int num2 = 10;
+int num3 = 10;	=>변수값이 똑같을때 변수 이름 다르게 많이 이걸 방지하고자 나온게 배열
+int num4 = 10;
+int num5 = 10;
+배열도 0부터 시작
+
+		//for(int i:array){} 이렇게도 씀 거의 배열 관련될때만 사용
+		//for(int i=0; i<size; i++)
+		//int x = array[i];
+		//syso (x) 와 같음
+		//향상된 for문 or for each 문 이라고 부름
+		//++i 를 생략한거 array 사이즈만큼 증가시키고, {}안에 있는 값들을 자동으로 입력해줘
+		
+		//배열 왜 쓰는지? 거지같은데 말이지
+		//int x =100; //100번 말들어라 => 하나의 변수에 모든 데이터를 담고싶다에서 나온게 배ㅗ열
+		//int x1 = 100; //배열이 없으면 이짓을 백번해야함
+		//int 배열[] = {100, 100, 100}; //선언식 변수를 하나만 만들어도 그 안에 100을 많이 넣을 수 있게 됨
+		//int 배열[] = new int[100]; class를 안배워서 나중에 알게 돼
+		//int 배열[]= {10,7}; //0번 = 10, 1번 = 7
+		//int size배열 = 배열.length;//결과는 2
+		//int apple = 배열[0];//배열인덱스에 0번 데이터 대입됨
+		//int banana = 배열[1];//배열인덱스 1번 데이터 대입됨
+
+---------------------------------
+
+		//자바는 일반 데이터타입=8 + class 타입=1 해서 총9개
+		
+		//String id ="JAVA"; //앞에 대문자가 붙으면 클래스 그래서 String은 클래스
+		//String id_2 = "JAVA";//이때 id와id_2는 문자를 비교한게 아닌 클래스를 비교
+		
+		
+							//(id == "JAVA")가 아닌
+		//if (id.equals("JAVA")){ //if (id.equals("JAVA")) boolean String 문자비교로 해야함
+			//System.out.println("아이디가 맞습니다");
+		//}else {
+			//System.out.println("아이디가 다릅니다");
+		//}
+		
+		//if (id == id_2) {
+		//	System.out.println("아이디가 맞습니다");
+		//}else {
+		//	System.out.println("아이디가 다릅니다");
+		//}
+
+------------------------------------
+
+		int array[] = {2,4,6,9};	//[] 이게배열 현재 {0-3} 중괄호를 이용해서 서랍에 데이터를 넣은 거
+		//2=0번, 4=1번,6=2번,8=3번  
+		System.out.println(array[0]);//첫 번째 index호출 이라고 부름
+		System.out.println(array.length);//배열의 길이 호출 총 4개의 숫자
+		//System.out.println(array[4]);를 하면 3번까지 밖에 없으니 에러남
+		//array[0] = 10; 0번째 숫자 2를 10으로 변경, 배열도 결국 변수니까
+		//array[1] = array[1]*3;d 이러면 4*3 해서 array[1]번은 4->12가 된거임
+		//if(array[0]==2)이렇게 조건 거는겨
+		
+		
+		for(int i=0; i<array.length; i++) { //length는 데이터가 있는 갯수 = 길이
+			//이때 int i가 0인 이유는 배열에 있는 숫자가 0부터 3까지 있으니까
+			System.out.println("배열에 있는 index값은:"+array[i]);//array[0],[1],[2],[3]번 호출
+		}
+		
+		
+		for(int i=0; i<array.length; i++) {
+			if(array[i] % 2 != 0) { //array[i] = i에 0~3까지 들어가는데 이때 0~3은 호출하는 번호니까!!
+				System.out.println("홀수는"+array[i]);
+			}
+		}
+		
+		System.out.println();
+		
+		for(int i=0; i<array.length; i++) {
+			if(array[i] % 2 == 0) {
+				System.out.println("짝수는"+array[i]);
+			}
+		}
+		
+		int sum = 0;
+		for(int i=0; i<array.length; i++) {
+			sum += array[i];
+			}
+		System.out.println(sum);
