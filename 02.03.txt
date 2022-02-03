@@ -1,0 +1,90 @@
+☆★sever : 서비스를 제공하는 주체☆★
+
+HTML -> 웹 서버 -> 디비 서버(My SQL)
+HTML과 디비서버는 연동이 안됨
+그래서 웹 서버를 거쳐 디비서버에 저장
+
+1. 웹 서버
+2. 디비 서버
+
+
+
+☆★☆★☆ HTML ★☆★☆★
+Hyper Text Markup Language 결국 HTML도 하나의 언어
+
+☆★VScode로 개발☆★
+
+필수로 알아야 하는 직군 웹디, 프로그래머(프론트or백엔드), 웹 기획자, 블로거, 쇼핑몰 운영자
+
+특징
+1. 논리적이고 연산적인 요소가 필요 없음
+2. 컴파일(이클립스에서 ctrl+F11) 작업이 필요없음
+	☆컴퓨터는 01밖에 모름 우리가 짠 소스를 01로 바꿔주는 작업이 컴파일
+★3. 브라우저마다 보이는게 다름
+	☆브라우저 : 크롬, 사파리, 웨일즈, 파이어폭스, 엣지...etc
+	☆크롬 + 익스플로어 많이 씀
+
+Prettier (최소한의 스타일을 맞춰줌)
+개발회사 입사 -> JAVA보다 JS 많이 쓴다면
+1. 개인마다 코드 스타일이 다름
+2. 누구는 ; 찍고 누구는 안찍고
+3. 글자 수 제한
+
+<html1>
+
+	<head> <-머리
+	</head>
+
+	<body> <-몸통
+	</body>
+
+</html1> - 이때 '/'는 이클립스의 '}'와 같다
+<html>안에 head body <-3가지가 기본 세팅
+
+head tag 
+	1. 웹 사이트의 제목을 쓸 수 있음 (like NAVER의 NAVER)
+	☆★2. 메타 데이터를 작성 할 수있음
+	☆★☆★메타란 : 어떠한 목적을 가지고 만들어진 데이터
+			ex) instagrame '#'처럼 특정한 키워드를 검색했을 때 보여주기도 함을 aka keyword
+
+body tag
+	1. 이 곳에서 웹 페이지 제작을 함
+
+☆★☆★☆★☆★자주쓰는 tag☆★☆★☆★☆★
+		외워
+h tag : 대,중,소 제목 쓸 때
+	h1~h6까지 있는데 보통 4까지만 씀
+	숫자가 커질수록 폰트크기가 작아짐
+
+a tag : 링크 이동할 때 사용
+
+☆★☆★☆ input tag : 뭔가를 작성할 때 주로 사용
+		     한 줄로 태그 여닫이가 가능
+		     
+		      속성(id, name, readonly...)은 중복이 가능하고
+		      input type은 한가지만 가능
+			type제외 모두 속성
+			id : 변수이름 (중복x)
+			name : 변수이름 (중복o)
+			value : 서버에 전송할 실제 데이터 or 디폴트 값
+			placeholder와 다른점은 placeholder은 알려만 주는거라서 타이핑 하면 없어짐
+			value는 타이핑해도 없어지지 않음
+
+		     -뒤에 옅은 회색글씨는 placeholder
+		     -글자 제한은 maxlength
+
+		     -PW의 경우 text 대신 password를 쳐서 *로 보이게
+		     -숫자만 입력은 text 대신 number
+		     -사진 업로드는 text 대신 file
+		     -날짜는 text 대신 date + month week time 도 있음
+
+		     -체크박스는 checkbox + 미리 체크 시키는 건 / 앞에 checked
+
+		     -버튼 만들기는 button + 그 안에 값 입력 value
+			또 다른 버튼 만드는 방법 button만 쳐서 만들기
+
+		     -선택박스 만들기는 select + option
+			value의 값이 DB에 저장이 됨
+
+		     -문단태그는 p(paragraph)
+			span 강조효과
