@@ -1,0 +1,49 @@
+HTML(android) -> DB 바로 연동 불가
+HTML -> web server -> DB 
+
+웹서버에 전송하는 방법
+1. get (public)
+ (http header에 전송)
+2. post (private)
+ (http body에 전송)
+
+HTML
+required : 필수입력란 (button으로는 안뜸 / submit으로 전송해야 입력 안했을 때 '입력하시오'가 뜸)
+disabled : 서버에 전송 안됨
+input type이 number에는 max로 최대값 조정 가능
+
+form tag에 button을 만들면 서버에 전송 불가능
+ =>submit
+
+CSS
+☆position
+	static(디폴트 값) : 안움직임
+
+	relative : 움직일 수 있음 
+	-> 조건.원래 자신의 자리에서 이동
+
+	absolute : 원하는대로 움직일 수 있음
+		만약 부모태그가 있다면 부모태그 기준으로 움직임
+		-> 조건. 부모가 relative일때만
+
+	fixed : 고정된 위치(스크롤 움직일 때마다 함께 움직임, 상담 아이콘)
+
+배경화면 전체 채우기
+브라우저마다 공백이 생김
+-> <style>
+*{
+        margin: 0px;
+        padding: 0px;
+}
+
+애초에 사진 사이즈가 너무 크면 resize해줘야함
+
+색 표기 RGBA
+red
+#101010
+rgba
+
+☆★CSS☆★
+1. position
+2. margin, padding, border-box
+☆★☆3. flex
