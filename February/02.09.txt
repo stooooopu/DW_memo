@@ -1,0 +1,73 @@
+-앞으로 수업 시작할때 기본 화면 :  브라우저마다 달라서 초기 세팅(여백 없애주는 거)
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  </style>
+  <body>
+    <div class="container"></div>
+  </body>
+</html>
+
+
+--------------수업시작
+
+1. position
+2. margin, padding, box-size
+3. flex
+기타) 반응형
+
+※짝태그까지 한 번에 바꾸기 Auto Rename Tag, Auto Close Tag 설치
+
+2. margin, padding
+
+ - div (박스태그)
+  공통점 : 박스 간격 조절
+   margin : 부모박스와 부모박스 간격 조절
+   padding : 부모박스 안에 있는 ☆자식박스 간격 조절
+
+1. padding : 자식태그와 거리두기, 부모태그 css padding에 써야함
+	=>작성법 
+	 - padding: 10px; //동서남북 모두 10px씩 패딩
+	 - padding: 5px(위), 10px(오른쪽&왼쪽), 0(아래);
+	 - padding: 5px(위&아래), 10px(오른쪽&왼쪽);
+	 - padding: 10px(위) 10px(오른쪽) 10px(아래쪽) 10px(왼쪽);
+
+2. margin : 부모끼리 거리두기, 부모태그 css padding에 써야함
+	=>작성법 
+	 - margin: 10px; //동서남북 모두 10px씩 패딩
+	 - margin: 5px(위), 10px(오른쪽&왼쪽), 0(아래);
+	 - margin: 5px(위&아래), 10px(오른쪽&왼쪽);
+	 - margin: 10px(위) 10px(오른쪽) 10px(아래쪽) 10px(왼쪽);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
