@@ -1,0 +1,27 @@
+길이 + border 의 크기가 되기 때문에 레이아웃이 오버됨
+
+card rayout
+
+overflow : 컨텐츠가 너무 커서 요소내에 모두 보여주기 힘들 때 사용
+	visible : 기본값
+	hidden : 넘치는 부분을 자름
+	scroll : 스크롤 바 추가
+
+hover : 마우스를 올렷을 때 이벤트 효과
+
+favicon : 페이지 위에 아이콘
+meta 밑에 
+<link rel="shortcut icon" href="ico파일" type="image/x-icon" />
+파비콘은 내가 만들 수 없고 페이지에서 제작바람
+
+☆★☆★ flex : java의 배열
+	      container안에 Item이 있음
+	      홈페이지의 상단 바
+
+header : 로고, 카테고리, 기타(인스타, 페이스북...)링크, 아이콘...
+
+시멘틱태그로 구성하면 검색엔진이 빠르고 효율적으로 검색해줌
+왜냐 태그 자체에 의미가 있으니까
+
+검색엔진(SEO)
+
