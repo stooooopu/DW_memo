@@ -1,0 +1,27 @@
+SQL
+
+☆☆★CHECK :  제약조건 (관계형 DB만 가능)
+ex)	check('예','아니오') => 여기에는 문자 예 or 아니오 만 올 수있음 
+
+
+1. data type : varchar 컬럼에 정수형 데이터 insert 가능
+		(하지만 실제론 정수형이 아닌 문자형으로 저장됨)
+2. 정수형이 오기 때문에 CHECK 제약조건으로 필터링 가능
+
+
+HTML & CSS
+ -card rayout
+ -img 관리
+
+※	카멜 표기법 = userName
+	HTML class name = user-name
+	(페북에서 카멜표기법으로 맞추자고 해서 ☆★리액트 라는 기술이 있음)
+
+※ img폴더 따로 관리할 때
+	- 같은 경로안에 폴더가 있을 때 : 폴더이름/이미지이름
+	- 전 경로에 폴더가 있을 때 : ../폴더이름/이미지이름 (.. 이 뒤로 가라는 의미)
+
+ex) html/workspace/day01/index.html
+     html/img/증명사진.png	
+
+ => ../../img/증명사진.png 으로 불러와야함 (애초에 index.html은 day01폴더에 있으니까
