@@ -1,0 +1,13 @@
+컨테이너 CSS (아이템의 배치)
+	- display : flex
+	- justify-content : space-between
+
+아이템 CSS (각각의 아이템 크기, 넓이등 지정)
+	- flex-basis
+	- flex-grow
+	- flex
+
+flex : 1 = flex-basis : 100% 와 동일 
+이렇게 되면 space-between이 안먹힌것 처럼 보임
+왜냐하면 각 아이템의 사이즈를 100%로 해서 꽉 차보임
+이로 알 수 있는 건 아이템css가 컨테이너css보다 강하단 것
