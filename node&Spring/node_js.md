@@ -59,7 +59,7 @@
 6. (주)심스리얼리티
 - META Team(SW Back-End 개발자)
 - 자격요건
-  - Java(SpringBoot/Spring Cloud),node,JS 개발이 가능 하신 분
+  - Java(SpringBoot/Spring Cloud),node.js 개발이 가능 하신 분
   - 스프링 프레임워크 개발이 가능 하신 분
   - RESTful API 설계/개발 경험이 있으신 분
   - Linux 환경 개발 경험이 있으신 분
@@ -107,7 +107,7 @@
   - 자격증 : 정보처리기사
   - Javascript(Node.js), Typescript를 활용한 웹어플리케이션 개발
   - 개인 Github 제출이 가능하신 분
-  - C3, Python 둘 중 하나의 언어를 활용하실 수 있으신 분
+  - C#, Python 둘 중 하나의 언어를 활용하실 수 있으신 분
 
 4. (주)알엠소프트
 - 설립일 : 2011(12년차)
@@ -125,7 +125,33 @@
 ### 프로그래머스
 +(주)데이터메이커
 
+---
 
+## 요약
+### 사람인
+- 검색어 : node.js / 조건 : 대전전체 : 26건
+- 검색어 : node.js / 조건 : 대전전체, 신입 : 8건
+### 잡코리아
+- 검색어 : node.js / 조건 : 대전전체 : 15건
+- 검색어 : node.js / 조건 : 대전전체, 신입 : 9건
+
+### 자격요건
+  - Linux, Python
+  - 하나이상의 프로그램 언어 개발 가능자(JAVA, C#, Python)
+  - HTML5, CSS, Javascript
+  - MySQL DBMS  
+  - 웹기반 프레임워크 Django, Spring, Rails, Laravel, Node.js  
+  - Git, SVN
+#### 하나 이상의 프로그램 언어 개발 : JAVA, C, Python, Linux 위주
+#### 하나 이상의 DB : MySQL, PostgreSQL, RDBMS, MariaDB 위주
+#### Git : 프로젝트 관리, 협업 경험&협업툴로 사용, 개발환경 경험 + 제출 등
+
+- 우대사항
+  - React
+  - 자격증 : 정보처리기사
+  - Spring, Spring boot
+
+---
 지금까지 조사했을 때 스타트업의 경우 node를 많이 원함  
 나는 앞으로 개발자로 꾸준히 일 하고싶고 더 발전하고 싶기 때문에  
 스타트업에서 일 하고 싶음  
