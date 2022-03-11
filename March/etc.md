@@ -17,5 +17,11 @@
     ></script> -->
 
 - slide참고 : https://emessell.tistory.com/200 
+- https://eunhee-programming.tistory.com/106
 
 - 글씨 참고 : https://cocosoft.kr/390 
+- https://www.creativosonline.org/ko/efectos-css-texto.html
+
+- https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=rybxvzxm258&logNo=120162127863
+
+- key color 추출 : http://www.cssdrive.com/imagepalette/index.php
