@@ -223,7 +223,7 @@ ubuntu : .sh
 
 ## 10. create -> connection
 
-![010](/AWS/img/RDS/010.JPG)
+![010](/AWS/img/RDS/010.jpg)
 
 ## 11. 사용하는 DB선택
 
@@ -243,7 +243,7 @@ ubuntu : .sh
 
 ## 15. AWS SQL편집기 실행
 
-![015](/AWS/img/RDS/015.JPG)
+![015](/AWS/img/RDS/015.jpg)
 
 ## 16. create DB & TABLE 실행
 - DB만 생성하면 autoincrement가 체크 안됨
@@ -256,7 +256,7 @@ ubuntu : .sh
 
 ## 18. 데이터 내보내기
 
-![018](/AWS/img/RDS/018.JPG)
+![018](/AWS/img/RDS/018.jpg)
 
 ## 19. 테이블선택 Cxported에 내가 선택한 테이블이 있는지 확인
 
@@ -280,7 +280,7 @@ ubuntu : .sh
 
 ## 24. edit connection으로 연결 SQL수정
 
-![024](/AWS/img/RDS/024.JPG)
+![024](/AWS/img/RDS/024.jpg)
 
 ## 25. serverHost : 7번의 엔드포인트 / userName&password : 3번에서 설정한 이름&암호
 
