@@ -213,6 +213,7 @@ ubuntu : .sh
 ![007](/AWS/img/RDS/007.JPG)
 
 ## 8. 인바운드&아웃바운드 규칙 수정 -> mysql추가
+- 0.0.0.0/0 : 모든 ip허용
 
 ![008](/AWS/img/RDS/008.JPG)
 
