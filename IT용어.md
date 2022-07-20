@@ -26,6 +26,9 @@
 ### G
 - Gateway (게이트웨이) : cmd에서 inconfig 라우터의 비밀번호  
 
+- GUI (graphical user interface)  
+ 사용자가 편리하게 사용할 수 있도록 입출력 등의 기능을 알기 쉬운 아이콘 따위의 그래픽으로 나타낸 것
+
 ### H
 - HTML 
   - Hyper Text Markup Language
@@ -55,6 +58,13 @@ HTTP 통신 특징
 ### I
 - IP : 인터넷을 사용하기 위한 (논리적인) 주소 (고속도로 통행권)  
 사설IP / 공인IP
+
+### M
+- NMS (Network Management System)  
+네트워크 상의 모든 장비들의 중앙감시 체계를 구축하여 모니터링, 분석 및 계획이 가능하며 관련 데이터를 활용한 이상 트래픽에 대한 조기 경보 및 네트워크 관리 시스템
+- MES (Manufacturing Execution System)  
+통합 생산관리 시스템
+
 
 ### S
 - Static IP : 고정 아이피 (만든 서비스를 고객에게 제공할 때)
@@ -110,3 +120,4 @@ HTML : 80
 HTML : 443
 SSH  : 22
 ```
+-  PoC(Proof of Concept) : 새로운 프로젝트가 실제로 실현 가능성이 있는가, 효과와 효용, 기술적인 관점에서부터 검증을 하는 과정
